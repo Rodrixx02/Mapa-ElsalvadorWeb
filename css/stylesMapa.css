@@ -1,0 +1,71 @@
+.contenido-mapa svg{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    /*este css hace que el svg del mapa se ajuste al bloque que se le dio en el boostrapgrid*/
+}
+
+
+
+.division-linea{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    /*el flex hace que la linea izq el texto del span y la linea derecha
+    vayan en una sola fila continua*/
+}
+
+.division-linea::before,
+.division-linea::after{
+    content:"";
+    flex: 1;
+    border-bottom: 1px solid #000;
+ /*elementos fantasma solo con borde para hacer las lineas*/
+}
+
+.division-linea span{
+    padding: 0 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: 'Forum', serif;
+    /*el nowrap evita que si el contenedor span se reduce
+    el texto que esta en el span no se corte*/
+}
+
+h1, h2 {
+  font-family: 'Kranky', cursive;
+}
+
+.contenido-texto p {
+  font-family: 'Forum', serif; 
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.encabezado-navegador{
+     font-family: 'Kranky', cursive;
+     position: sticky;
+    top: 0;
+    z-index: 1000;
+    /*hace que la abrra superior siempre este arriba*/
+}
+
+
+.navbar a {
+  color:white; 
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(177, 117, 32, 0.94); 
+  border-radius: 4px;
+}
+
+.navbar {
+  background-image: url('../img/navbar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
