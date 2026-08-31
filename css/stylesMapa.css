@@ -69,3 +69,40 @@ h1, h2 {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/*resalta el borde del cuadro q contiene el mapa*/
+.badge-departamento {
+    display: inline-block;
+    background-color: #26525c;
+    color: #ffffff;
+    font-family: 'Kranky', cursive;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.75rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+/*enlaces del submenú*/
+.lista-submenus a {
+    color: #000000;
+    font-family: 'Forum', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.lista-submenus a:hover {
+    color: #b17520;
+}
+
+/*cajas contenedoras de contenido por js*/
+.contenedor-placeholder {
+    background-color: #d9d9d9;
+    min-height: 160px;
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
