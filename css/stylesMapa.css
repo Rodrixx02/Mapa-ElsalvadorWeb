@@ -106,3 +106,51 @@ h1, h2 {
     align-items: center;
     justify-content: center;
 }
+
+/*poniendole colores dependiendo de la zona departamental*/
+#SVAH{
+    fill:rgba(3, 221, 40, 0.801)
+}
+#SVSA{
+    fill:rgba(3, 221, 40, 0.801)
+}
+#SVSO{
+    fill:rgba(3, 221, 40, 0.801)
+}
+
+#SVUS{
+    fill: #209eb1b3;
+}
+#SVUN{
+    fill: #209eb1b3;
+}
+#SVSM{
+    fill: #209eb1b3;
+}
+#SVMO
+{
+    fill: #209eb1b3;
+}
+#SVSS{
+    fill:#ff7c01db ;
+}
+
+#SVLI{
+fill:#ff7c01db ;
+}
+#SVPA{
+fill:#ff7c01db ;
+}
+#SVCU{
+fill:#ff7c01db ;
+}
+#SVCA{
+fill:#ff7c01db ;
+}
+#SVCH{
+fill:#ff7c01db ;
+}
+
+#SVSV{
+    fill:#ff7c01db ;
+}
