@@ -154,3 +154,28 @@ fill:#ff7c01db ;
 #SVSV{
     fill:#ff7c01db ;
 }
+
+.pequeño-popover {
+    --bs-popover-max-width: 130px;
+
+    font-size: 0.65rem;
+    font-family: cursive;
+    
+
+    --bs-popover-body-padding-x: 0.1rem;
+    --bs-popover-body-padding-y: 0.1rem;
+    --bs-popover-header-padding-x: 0.1rem;
+    --bs-popover-header-padding-y: 0.1rem;
+    --bs-popover-border-color: rgba(147, 150, 89);;
+    --bs-popover-bg: #B2AC88;
+    --bs-popover-header-bg: rgba(147, 150, 89);;
+    --bs-popover-header-font-size: 0.75rem;
+    --bs-popover-body-color: #ffffff;
+    --bs-popover-header-color: #ffffff;
+
+    pointer-events: none;
+}
+
+.pequeño-popover .popover-header{
+    font-family: 'Kranky', cursive;
+}
