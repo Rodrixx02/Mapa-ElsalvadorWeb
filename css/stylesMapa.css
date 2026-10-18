@@ -6,8 +6,6 @@
     /*este css hace que el svg del mapa se ajuste al bloque que se le dio en el boostrapgrid*/
 }
 
-
-
 .division-linea{
     display: flex;
     align-items: center;
@@ -70,7 +68,7 @@ h1, h2 {
   background-repeat: no-repeat;
 }
 
-/*resalta el borde del cuadro q contiene el mapa*/
+/*etiqueta con el nombre del departamento*/
 .badge-departamento {
     display: inline-block;
     background-color: #26525c;
@@ -108,51 +106,16 @@ h1, h2 {
 }
 
 /*poniendole colores dependiendo de la zona departamental*/
-#SVAH{
-    fill:rgba(3, 221, 40, 0.801)
-}
-#SVSA{
-    fill:rgba(3, 221, 40, 0.801)
-}
-#SVSO{
-    fill:rgba(3, 221, 40, 0.801)
+#SVAH, #SVSA, #SVSO{
+    fill: rgba(3, 221, 40, 0.801);
 }
 
-#SVUS{
+#SVUS, #SVUN, #SVSM, #SVMO{
     fill: #209eb1b3;
-}
-#SVUN{
-    fill: #209eb1b3;
-}
-#SVSM{
-    fill: #209eb1b3;
-}
-#SVMO
-{
-    fill: #209eb1b3;
-}
-#SVSS{
-    fill:#ff7c01db ;
 }
 
-#SVLI{
-fill:#ff7c01db ;
-}
-#SVPA{
-fill:#ff7c01db ;
-}
-#SVCU{
-fill:#ff7c01db ;
-}
-#SVCA{
-fill:#ff7c01db ;
-}
-#SVCH{
-fill:#ff7c01db ;
-}
-
-#SVSV{
-    fill:#ff7c01db ;
+#SVSS, #SVLI, #SVPA, #SVCU, #SVCA, #SVCH, #SVSV{
+    fill: #ff7c01db;
 }
 
 .pequeño-popover {
@@ -166,7 +129,7 @@ fill:#ff7c01db ;
     --bs-popover-body-padding-y: 0.1rem;
     --bs-popover-header-padding-x: 0.1rem;
     --bs-popover-header-padding-y: 0.1rem;
-    --bs-popover-border-color: rgba(147, 150, 89);;
+    --bs-popover-border-color: rgba(147, 150, 89);
     --bs-popover-bg: #B2AC88;
     --bs-popover-header-bg: rgba(147, 150, 89);;
     --bs-popover-header-font-size: 0.75rem;
@@ -179,8 +142,6 @@ fill:#ff7c01db ;
 .pequeño-popover .popover-header{
     font-family: 'Kranky', cursive;
 }
-
-/*agregar al final de css/stylesMapa.css, es para la pagina InfoDpto*/
  
 /*para que el menu conoce mas aqui baje suave a cada seccion*/
 html {
@@ -211,15 +172,46 @@ html {
     margin-top: 0;
 }
  
-/*el texto de presentacion va centrado como en el maquetado*/
 #contenedor-texto-depto {
     text-align: center;
 }
  
-/*las imagenes de las secciones siempre del mismo alto*/
-.contenedor-contenido img {
+/*foto del departamento en la seccion de historia*/
+.foto-depto{
     width: 100%;
-    height: 160px;
+    height: 260px;
     object-fit: cover;
 }
  
+/*el viewBox centra el dibujo dentro de esta caja*/
+#contenedor-silueta-depto svg{
+    height: 380px;
+}
+ 
+@media (max-width: 768px){
+    #contenedor-silueta-depto svg{
+        height: 260px;
+    }
+}
+
+.contenido-mapa circle{
+    pointer-events: none;
+}
+.contenido-mapa svg{
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*aviso que solo se ve en dispositivos sin hover (celulares y tablets)*/
+.aviso-tactil{
+    display: none;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+ 
+@media (hover: none){
+    .aviso-tactil{
+        display: block;
+    }
+}
