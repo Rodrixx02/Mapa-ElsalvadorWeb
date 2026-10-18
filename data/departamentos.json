@@ -1,0 +1,437 @@
+[
+  {
+    "id": "SVAH",
+    "nombre": "Ahuachapán",
+    "zona": "occidental",
+    "cabecera": "Ahuachapán",
+    "extensionKm2": 1240,
+    "poblacion": 360000,
+    "fiestasPatronales": "1 al 14 de febrero (Dulce Nombre de Jesús) y 7 de septiembre (Día de los Farolitos)",
+    "historia": "Poblado originalmente por tribus mayas pokomames y pipiles. En el siglo XIX se consolidó como la cuna de la caficultura salvadoreña y más tarde fue pionero regional en la explotación de energía geotérmica con la Central Geotérmica de Ahuachapán.",
+    "municipios": [
+      "Ahuachapán Norte (Atiquizaya, El Refugio, San Lorenzo, Turín)",
+      "Ahuachapán Centro (Ahuachapán, Apaneca, Concepción de Ataco, Tacuba)",
+      "Ahuachapán Sur (Guaymango, Jujutla, San Francisco Menéndez, San Pedro Puxtla)"
+    ],
+    "lugaresTuristicos": [
+      "Parque Nacional El Imposible",
+      "Los Ausoles",
+      "Termales de Santa Teresa",
+      "Ruta de las Flores (Concepción de Ataco y Apaneca)",
+      "Laguna El Espino"
+    ],
+    "geografia": {
+      "rios": ["Río Paz", "Río Pululuya", "Río Cara Sucia"],
+      "lagos": ["Laguna Verde", "Laguna El Espino", "Laguna Las Ninfas"],
+      "volcanesCerros": ["Volcán de Apaneca", "Cerro de Chingo", "Cerro Grande de Apaneca"]
+    },
+    "personajesCelebres": [
+      "Alfredo Espino (Poeta nacional, autor de 'Jícaras Tristes')",
+      "Dr. Arturo Romero (Médico y líder del movimiento civil opositor de 1944)"
+    ]
+  },
+  {
+    "id": "SVSA",
+    "nombre": "Santa Ana",
+    "zona": "occidental",
+    "cabecera": "Santa Ana",
+    "extensionKm2": 2023,
+    "poblacion": 585000,
+    "fiestasPatronales": "17 al 26 de julio (Fiestas Julias en honor a Nuestra Señora de Santa Ana)",
+    "historia": "Antiguamente llamada Sihuatehuacán ('Lugar de sacerdotisas'). Adquirió el título de 'La Ciudad Heroica' tras la gesta de 'Los 44' en 1894 que derrocó la dictadura de los hermanos Ezeta, impulsando la época dorada del auge cafetalero.",
+    "municipios": [
+      "Santa Ana Norte (Masahuat, Metapán, Santa Rosa Guachipilín, Texistepeque)",
+      "Santa Ana Centro (Santa Ana)",
+      "Santa Ana Este (Coatepeque, El Congo)",
+      "Santa Ana Oeste (Candelaria de la Frontera, Chalchuapa, El Porvenir, San Antonio Pajonal, San Sebastián Salitrillo, Santiago de la Frontera)"
+    ],
+    "lugaresTuristicos": [
+      "Catedral de Santa Ana",
+      "Teatro Nacional de Santa Ana",
+      "Parque Nacional Los Volcanes (Cerro Verde e Ilamatepec)",
+      "Sitio Arqueológico Tazumal",
+      "Lago de Coatepeque"
+    ],
+    "geografia": {
+      "rios": ["Río Lempa", "Río Guajoyo", "Río Suquiapa"],
+      "lagos": ["Lago de Coatepeque", "Laguna de Cuscachapa", "Laguna de Metapán"],
+      "volcanesCerros": ["Volcán Ilamatepec (Santa Ana)", "Cerro Verde", "Cerro Singüil"]
+    },
+    "personajesCelebres": [
+      "Pedro Geoffroy Rivas (Antropólogo, lingüista y poeta)",
+      "Dr. David J. Guzmán (Médico, botánico y fundador del Museo Nacional)",
+      "Tomás Regalado (Militar y presidente de la República)"
+    ]
+  },
+  {
+    "id": "SVSO",
+    "nombre": "Sonsonate",
+    "zona": "occidental",
+    "cabecera": "Sonsonate",
+    "extensionKm2": 1225,
+    "poblacion": 480000,
+    "fiestasPatronales": "25 de enero al 2 de febrero (Virgen de Candelaria)",
+    "historia": "Fundada en 1552 con el nombre de Villa del Espíritu Santo. Es uno de los centros históricos de la civilización pipil, cuna de la lengua náhuat y célebre por albergar la tradición de Semana Santa más solemne y concurrida del país.",
+    "municipios": [
+      "Sonsonate Norte (Juayúa, Nahuizalco, Salcoatitán, Santa Catarina Masahuat)",
+      "Sonsonate Centro (Sonsonate, Sonzacate, Nahulingo, San Antonio del Monte, Santo Domingo de Guzmán)",
+      "Sonsonate Este (Armenia, Caluco, Cuisnahuat, Izalco, San Julián)",
+      "Sonsonate Oeste (Acajutla)"
+    ],
+    "lugaresTuristicos": [
+      "Playas y Arrecife de Los Cóbanos",
+      "Puerto de Acajutla",
+      "Ruta de las Flores (Juayúa, Salcoatitán, Nahuizalco)",
+      "Termales de Caluco",
+      "Cascada El Escuco"
+    ],
+    "geografia": {
+      "rios": ["Río Sensunapán", "Río Banderas", "Río Chiquihuat"],
+      "lagos": ["Laguna El Gancho"],
+      "volcanesCerros": ["Volcán de Izalco ('El Faro del Pacífico')", "Cerro de Apaneca"]
+    },
+    "personajesCelebres": [
+      "Salarrué - Salvador Salazar Arrué (Escritor cumbre y pintor, autor de 'Cuentos de Barro')",
+      "María de Baratta (Compositora, pianista e investigadora folclórica)"
+    ]
+  },
+  {
+    "id": "SVCH",
+    "nombre": "Chalatenango",
+    "zona": "central",
+    "cabecera": "Chalatenango",
+    "extensionKm2": 2017,
+    "poblacion": 205000,
+    "fiestasPatronales": "15 al 24 de junio (San Juan Bautista) y diciembre (Fiestas de la Inmaculada Concepción)",
+    "historia": "Su toponimia náhuat-lenca significa 'Valle de arenas y aguas'. Jugó un papel neurálgico en la historia contemporánea nacional y se convirtió en un referente de resiliencia comunitaria y desarrollo artesanal a través del estilo de pintura Naïf.",
+    "municipios": [
+      "Chalatenango Norte (Citalá, La Palma, San Ignacio)",
+      "Chalatenango Centro (Agua Caliente, Dulce Nombre de María, El Paraíso, La Reina, Nueva Concepción, San Fernando, San Francisco Morazán, San Rafael, Santa Rita)",
+      "Chalatenango Sur (Chalatenango, Arcatao, Azacualpa, Cancasque, Comalapa, Concepción Quezaltepeque, El Carrizal, La Laguna, Las Vueltas, Nombre de Jesús, Nueva Trinidad, Ojos de Agua, Potonico, San Antonio de la Cruz, San Antonio Los Ranchos, San Francisco Lempa, San Isidro Labrador, San José Cancasque, San José Las Flores, San Luis del Carmen, San Miguel de Mercedes, San Pedro Perulapán)"
+    ],
+    "lugaresTuristicos": [
+      "Cerro El Pital (Punto más alto de El Salvador a 2,730 msnm)",
+      "San Ignacio y Miramundo",
+      "Pueblo artesanal de La Palma",
+      "Embalse Cerrón Grande (Turismo lacustre)"
+    ],
+    "geografia": {
+      "rios": ["Río Lempa", "Río Sumpul", "Río Tamulasco"],
+      "lagos": ["Embalse Cerrón Grande (Lago Suchitlán)"],
+      "volcanesCerros": ["Cerro El Pital", "Cerro Miramundo", "Peñón de Cayaguanca"]
+    },
+    "personajesCelebres": [
+      "Fernando Llort (Artista plástico universal y fundador del taller Semilla de Dios)",
+      "Luciano Morales (Compositor y maestro de música sacra local)"
+    ]
+  },
+  {
+    "id": "SVLI",
+    "nombre": "La Libertad",
+    "zona": "central",
+    "cabecera": "Santa Tecla",
+    "extensionKm2": 1653,
+    "poblacion": 780000,
+    "fiestasPatronales": "1 al 25 de diciembre (En honor al Niño Jesús de Praga y Santa Tecla)",
+    "historia": "Establecido en 1865. Tras el sismo que devastó San Salvador en 1854, la ciudad de Santa Tecla (fundada como Nueva San Salvador) fungió como capital provisional de la República, destacando por su rápido ordenamiento urbano señorial.",
+    "municipios": [
+      "La Libertad Norte (Quezaltepeque, San Matías, San Pablo Tacachico)",
+      "La Libertad Centro (San Juan Opico, Ciudad Arce)",
+      "La Libertad Oeste (Colón, Jayaque, Sacacoyo, Tepecoyo, Talnique)",
+      "La Libertad Costa (Chiltiupán, Jicalapa, La Libertad, Tamanique, Teotepeque)",
+      "La Libertad Sur (Santa Tecla, Comasagua)",
+      "La Libertad Este (Antiguo Cuscatlán, Huizúcar, Nuevo Cuscatlán, San José Villanueva, Zaragoza)"
+    ],
+    "lugaresTuristicos": [
+      "Surf City (Playas El Tunco, El Sunzal, El Zonte)",
+      "Mercado del Mar y Muelle de La Libertad",
+      "Sitio Arqueológico Joya de Cerén (Patrimonio de la Humanidad)",
+      "Sitio Arqueológico San Andrés",
+      "Parque Nacional Walter Thilo Deininger"
+    ],
+    "geografia": {
+      "rios": ["Río Huiza", "Río Chilama", "Río San Antonio"],
+      "lagos": ["Laguna de Caldera"],
+      "volcanesCerros": ["Volcán de San Salvador (lado occidental)", "Cordillera del Bálsamo"]
+    },
+    "personajesCelebres": [
+      "Toño Salazar (Caricaturista de renombre internacional)",
+      "José Cástulo Gómez (Prócer firmante del Acta de Independencia)"
+    ]
+  },
+  {
+    "id": "SVSS",
+    "nombre": "San Salvador",
+    "zona": "central",
+    "cabecera": "San Salvador",
+    "extensionKm2": 886,
+    "poblacion": 1600000,
+    "fiestasPatronales": "1 al 6 de agosto (Fiestas Agostinas en honor al Divino Salvador del Mundo)",
+    "historia": "Fundada en 1525 en Ciudad Vieja y reasentada en el Valle de Las Hamacas en 1545. Epicentro de los movimientos independentistas de 1811 y 1814, centro administrativo, político y financiero supremo de El Salvador.",
+    "municipios": [
+      "San Salvador Norte (Aguilares, El Paisnal, Guazapa)",
+      "San Salvador Oeste (Apopa, Nejapa)",
+      "San Salvador Este (Ilopango, San Martín, Soyapango, Tonacatepeque)",
+      "San Salvador Centro (San Salvador, Ayutuxtepeque, Mejicanos, Cuscatancingo, Ciudad Delgado)",
+      "San Salvador Sur (Panchimalco, Rosario de Mora, San Marcos, Santo Tomás, Santiago Texacuangos)"
+    ],
+    "lugaresTuristicos": [
+      "Centro Histórico (Catedral Metropolitana, Palacio y Teatro Nacional, Iglesia El Rosario)",
+      "Parque Nacional El Boquerón",
+      "Parque Balboa y La Puerta del Diablo",
+      "Museo Nacional de Antropología Dr. David J. Guzmán (MUNA)",
+      "Parque Cuscatlán"
+    ],
+    "geografia": {
+      "rios": ["Río Acelhuate", "Río Las Cañas"],
+      "lagos": ["Lago de Ilopango (costa poniente)"],
+      "volcanesCerros": ["Volcán de San Salvador (El Boquerón)", "Cerro San Jacinto"]
+    },
+    "personajesCelebres": [
+      "San Óscar Arnulfo Romero (Arzobispo mártir y primer santo salvadoreño)",
+      "Roque Dalton (Poeta y ensayista medular salvadoreño)",
+      "Claudia Lars (Destacada poetisa lírica nacional)"
+    ]
+  },
+  {
+    "id": "SVCU",
+    "nombre": "Cuscatlán",
+    "zona": "central",
+    "cabecera": "Cojutepeque",
+    "extensionKm2": 756,
+    "poblacion": 260000,
+    "fiestasPatronales": "15 al 25 de enero (En honor a San Sebastián Mártir y San Juan Bautista)",
+    "historia": "Núcleo geográfico del primitivo Señorío de Cuscatlán. Su cabecera Cojutepeque sirvió en cuatro oportunidades distintas como capital provisional del país durante el siglo XIX ante desastres sísmicos en la capital.",
+    "municipios": [
+      "Cuscatlán Norte (Suchitoto, San José Guayabal, Oratorio de Concepción, San Bartolomé Perulapía, San Pedro Perulapán)",
+      "Cuscatlán Sur (Cojutepeque, Candelaria, El Carmen, El Rosario, Monte San Juan, San Cristóbal, San Rafael Cedros, San Ramón, Santa Cruz Analquito, Santa Cruz Michapa, Tenancingo)"
+    ],
+    "lugaresTuristicos": [
+      "Ciudad Colonial de Suchitoto (Iglesia Santa Lucía y galerías de arte)",
+      "Cascada Los Tercios",
+      "Cerro de las Pavas (Santuario de la Virgen de Fátima)",
+      "Miradores del Lago Suchitlán"
+    ],
+    "geografia": {
+      "rios": ["Río Quezalapa", "Río Lempa"],
+      "lagos": ["Lago Suchitlán", "Lago de Ilopango (lado norte)"],
+      "volcanesCerros": ["Cerro de las Pavas", "Cerro de Guazapa"]
+    },
+    "personajesCelebres": [
+      "Alejandro Cotto (Cineasta, escritor y gestor del patrimonio cultural de Suchitoto)",
+      "Ana Dolores Arias (Pionera de la docencia y formación normalista)"
+    ]
+  },
+  {
+    "id": "SVPA",
+    "nombre": "La Paz",
+    "zona": "central",
+    "cabecera": "Zacatecoluca",
+    "extensionKm2": 1224,
+    "poblacion": 360000,
+    "fiestasPatronales": "15 al 31 de diciembre (Virgen de Santa Lucía y de los Pobres)",
+    "historia": "Tierra ancestral de la etnia Nonualco. En 1833 fue el escenario del histórico levantamiento indígena liderado por Anastasio Aquino contra los abusos y reclutamientos forzosos del gobierno federal.",
+    "municipios": [
+      "La Paz Oeste (Cuyultitán, Olocuilta, San Juan Talpa, San Luis Talpa, San Pedro Masahuat, Tapalhuaca)",
+      "La Paz Centro (El Rosario, Jerusalén, Mercedes La Ceiba, Paraíso de Osorio, San Antonio Masahuat, San Emigdio, San Juan Tepezontes, San Luis La Herradura, San Miguel Tepezontes, San Pedro Nonualco, Santa María Ostuma)",
+      "La Paz Este (San Juan Nonualco, San Rafael Obrajuelo, Zacatecoluca)"
+    ],
+    "lugaresTuristicos": [
+      "Playas de la Costa del Sol",
+      "Estero de Jaltepeque",
+      "Turicentro Acuático Ichanmichen",
+      "Pupusódromos de Olocuilta (cuna de la pupusa de arroz)",
+      "Basílica de Santa Lucía en Zacatecoluca"
+    ],
+    "geografia": {
+      "rios": ["Río Jiboa", "Río Jalponga"],
+      "lagos": ["Estero de Jaltepeque", "Lago de Ilopango (margen sur)"],
+      "volcanesCerros": ["Volcán de San Vicente (vertiente oeste)", "Cerro Tacuazín"]
+    },
+    "personajesCelebres": [
+      "Anastasio Aquino (Cacique y comandante del levantamiento indígena de los Nonualcos)",
+      "Dr. José Simeón Cañas (Prócer ilustre, libertador de los esclavos en Centroamérica)"
+    ]
+  },
+  {
+    "id": "SVCA",
+    "nombre": "Cabañas",
+    "zona": "central",
+    "cabecera": "Sensuntepeque",
+    "extensionKm2": 1104,
+    "poblacion": 165000,
+    "fiestasPatronales": "25 de noviembre al 4 de diciembre (Virgen de Santa Bárbara)",
+    "historia": "Creado por decreto legislativo en 1873 y bautizado en tributo al prócer general José Trinidad Cabañas. Célebre por su tradición alfarera y por el ingenio de sus artesanos al crear piezas de modelado en miniatura.",
+    "municipios": [
+      "Cabañas Este (Sensuntepeque, Guacotecti, San Isidro, Victoria, Dolores)",
+      "Cabañas Oeste (Ilobasco, Tejutepeque, Jutiapa, Cinquera)"
+    ],
+    "lugaresTuristicos": [
+      "Talleres de Artesanías y Cerámica en Ilobasco",
+      "Bosque de Cinquera (Ecoturismo e historia)",
+      "Mirador Cerro Pelón",
+      "Complejo Hidroeléctrico 5 de Noviembre"
+    ],
+    "geografia": {
+      "rios": ["Río Lempa", "Río Titihuapa"],
+      "lagos": ["Embalse Presa 5 de Noviembre"],
+      "volcanesCerros": ["Cerro Pelón", "Cerro de Ávila", "Cerro Santa Inés"]
+    },
+    "personajesCelebres": [
+      "Dominga Herrera (Artesana célebre por la invención de las miniaturas de barro)",
+      "Lucila Gómez de Morán (Maestra emérita y benefactora educativa)"
+    ]
+  },
+  {
+    "id": "SVSV",
+    "nombre": "San Vicente",
+    "zona": "central",
+    "cabecera": "San Vicente",
+    "extensionKm2": 1184,
+    "poblacion": 185000,
+    "fiestasPatronales": "12 al 25 de diciembre (En honor a San Vicente Abad y Mártir)",
+    "historia": "Fundada en 1635 bajo la sombra de un árbol de Tempisque por cincuenta familias españolas. Destacó como capital provincial y eje de la rica industria añilera colonial salvadoreña.",
+    "municipios": [
+      "San Vicente Norte (Apastepeque, Santa Clara, San Ildefonso, San Esteban Catarina, San Sebastián, Santo Domingo)",
+      "San Vicente Sur (San Vicente, Guadalupe, San Cayetano Istepeque, Tecoluca, Tepetitán, Verapaz)"
+    ],
+    "lugaresTuristicos": [
+      "Torre Vicentina (Parque Central)",
+      "Laguna de Apastepeque",
+      "Parque Acuático Amapulapa",
+      "Pueblo artesanal de telares de San Sebastián",
+      "Volcán Chinchontepec"
+    ],
+    "geografia": {
+      "rios": ["Río Acahuapa", "Río Lempa"],
+      "lagos": ["Laguna de Apastepeque", "Laguna Ciega"],
+      "volcanesCerros": ["Volcán de San Vicente (Chinchontepec)", "Cerro Sihuatepeque"]
+    },
+    "personajesCelebres": [
+      "Francisco Gavidia (Polígrafo, humanista, dramaturgo y educador de Rubén Darío)",
+      "Dr. Antonio José Cañas (Diplomático y redactor de los primeros textos constitucionales)"
+    ]
+  },
+  {
+    "id": "SVUS",
+    "nombre": "Usulután",
+    "zona": "oriental",
+    "cabecera": "Usulután",
+    "extensionKm2": 2130,
+    "poblacion": 370000,
+    "fiestasPatronales": "18 al 25 de noviembre (En honor a Santa Catarina de Alejandría)",
+    "historia": "Su nombre náhuat significa 'Ciudad de los ocelotes'. Reconocido a lo largo del siglo XX como 'El Granero de la República' debido a su enorme producción de algodón, granos básicos y café.",
+    "municipios": [
+      "Usulután Norte (Santiago de María, Alegría, Berlín, Mercedes Umaña, Jucuapa, El Triunfo, Estanzuelas, San Buenaventura, Nueva Granada)",
+      "Usulután Este (Usulután, Santa Elena, Jiquilisco, Ozatlán, Tecapán, California, Ereguayquín, Concepción Batres, San Dionisio, Puerto El Triunfo, Jucuarán)",
+      "Usulután Oeste (San Agustín, San Francisco Javier)"
+    ],
+    "lugaresTuristicos": [
+      "Bahía de Jiquilisco (Sitio Ramsar y Reserva de Biosfera)",
+      "Laguna de Alegría ('La Esmeralda de América' descrita por Gabriela Mistral)",
+      "Pueblo de Alegría y miradores cafetaleros",
+      "Puerto El Triunfo",
+      "Playa El Espino"
+    ],
+    "geografia": {
+      "rios": ["Río Lempa (boca final)", "Río Grande de San Miguel"],
+      "lagos": ["Laguna de Alegría", "Bahía de Jiquilisco"],
+      "volcanesCerros": ["Volcán Tecapa", "Volcán de Usulután", "Cerro El Tigre"]
+    },
+    "personajesCelebres": [
+      "Alberto Masferrer (Filósofo, ensayista, maestro y autor de 'El Mínimum Vital')",
+      "Gregorio Sánchez Sacasa (Destacado músico y compositor regional)"
+    ]
+  },
+  {
+    "id": "SVSM",
+    "nombre": "San Miguel",
+    "zona": "oriental",
+    "cabecera": "San Miguel",
+    "extensionKm2": 2077,
+    "poblacion": 500000,
+    "fiestasPatronales": "Todo noviembre, coronado el último sábado con el célebre Carnaval de San Miguel (Virgen de la Paz)",
+    "historia": "Fundada en 1530 por don Luis de Moscoso bajo el nombre de San Miguel de la Frontera. Fungió como enclave comercial y militar de avanzada y es la capital económica y cultural del oriente salvadoreño.",
+    "municipios": [
+      "San Miguel Norte (Ciudad Barrios, Sesori, Nuevo Edén de San Juan, San Gerardo, San Luis de la Reina, Carolina, San Antonio del Mosco, Chapeltique)",
+      "San Miguel Centro (San Miguel, Comacarán, Uluazapa, Moncagua, Quelepa, Chirilagua)",
+      "San Miguel Oeste (Chinameca, El Tránsito, Lolotique, Nueva Guadalupe, San Jorge, San Rafael Oriente)"
+    ],
+    "lugaresTuristicos": [
+      "Catedral Basílica de Nuestra Señora de la Paz",
+      "Playa Las Flores (punto de surf internacional)",
+      "Playa El Cuco",
+      "Laguna El Jocotal (Santuario de aves)",
+      "Sitio Arqueológico Quelepa"
+    ],
+    "geografia": {
+      "rios": ["Río Grande de San Miguel", "Río San Esteban"],
+      "lagos": ["Laguna de Aramuaca", "Laguna El Jocotal", "Laguna de Olomega (oeste)"],
+      "volcanesCerros": ["Volcán Chaparrastique (San Miguel)", "Volcán Pacayal / Chinameca"]
+    },
+    "personajesCelebres": [
+      "Capitán General Gerardo Barrios (Estadista liberal, presidente y prócer nacional)",
+      "Doctor David Rosales (Ilustre jurista y mecenas cultural)"
+    ]
+  },
+  {
+    "id": "SVMO",
+    "nombre": "Morazán",
+    "zona": "oriental",
+    "cabecera": "San Francisco Gotera",
+    "extensionKm2": 1447,
+    "poblacion": 205000,
+    "fiestasPatronales": "1 al 4 de octubre (San Francisco de Asís)",
+    "historia": "Conocido inicialmente como Gotera, fue renombrado en 1887 en homenaje al héroe federal Francisco Morazán. Región de arraigado linaje lenca, cuna del arte rupestre nacional y epicentro de memoria histórica.",
+    "municipios": [
+      "Morazán Norte (Arambala, Cacaopera, Corinto, El Rosario, Joateca, Jocoaitique, Meanguera, Perquín, San Fernando, San Isidro, Torola)",
+      "Morazán Sur (San Francisco Gotera, Chilanga, Delicias de Concepción, El Divisadero, Gualococti, Guatajiagua, Jocoro, Lolotiquillo, Osicala, San Carlos, San Simón, Sensembra, Sociedad, Yamabal, Yoloaiquín)"
+    ],
+    "lugaresTuristicos": [
+      "Ruta de la Paz (Perquín y Arambala)",
+      "Museo de la Revolución Salvadoreña en Perquín",
+      "Cueva del Espíritu Santo en Corinto (Petroglifos precolombinos)",
+      "Río Sapo (Ecoturismo y aguas color turquesa)",
+      "Cerro Pericón y Llano del Muerto"
+    ],
+    "geografia": {
+      "rios": ["Río Sapo", "Río Torola", "Río Araute"],
+      "lagos": ["Pozas y balnearios del Río Sapo"],
+      "volcanesCerros": ["Cerro Cacahuatique", "Cerro Gigante", "Cerro El Pericón"]
+    },
+    "personajesCelebres": [
+      "Fidel Sánchez Hernández (Militar, estadista y expresidente)",
+      "Prudencia Ayala (Pionera de los derechos políticos de la mujer en Hispanoamérica)"
+    ]
+  },
+  {
+    "id": "SVUN",
+    "nombre": "La Unión",
+    "zona": "oriental",
+    "cabecera": "La Unión",
+    "extensionKm2": 2074,
+    "poblacion": 270000,
+    "fiestasPatronales": "1 al 15 de diciembre (En honor a la Inmaculada Concepción de María)",
+    "historia": "Establecido como departamento en 1865 tras llamarse San Carlos de la Unión. Su posición geográfica en el Golfo de Fonseca lo convirtió históricamente en el puerto marítimo de salida comercial clave hacia el Océano Pacífico.",
+    "municipios": [
+      "La Unión Norte (Anamorós, Bolívar, Concepción de Oriente, El Sauce, Lislique, Nueva Esparta, Pasaquina, Polorós, San José de la Fuente, Santa Rosa de Lima)",
+      "La Unión Sur (La Unión, Conchagua, El Carmen, Intipucá, Meanguera del Golfo, San Alejo, Yayantique, Yucuaiquín)"
+    ],
+    "lugaresTuristicos": [
+      "Mirador Espíritu de la Montaña (Volcán de Conchagua)",
+      "Playas Las Tunas, Torola y Playitas",
+      "Islas del Golfo de Fonseca (Isla Meanguera, Isla Conchagüita, Isla Zacatillo)",
+      "Parroquia colonial Santiago Apóstol en Conchagua (1693)",
+      "Puerto de La Unión"
+    ],
+    "geografia": {
+      "rios": ["Río Goascorán (frontera con Honduras)", "Río Sirama"],
+      "lagos": ["Laguna de Olomega", "Golfo de Fonseca"],
+      "volcanesCerros": ["Volcán de Conchagua", "Cerro El Pando"]
+    },
+    "personajesCelebres": [
+      "Hugo Lindo (Poeta, narrador, diplomático y jurista)",
+      "José María Peralta Lagos (Ingeniero, militar y escritor de sátira social)"
+    ]
+  }
+]
