@@ -34,5 +34,10 @@ ArrayDepartamentos.forEach((departamento)=>{
       event.currentTarget.style.fill = "";
       PopoverCirculo.hide();
    });
+
+   //evento click que redirige a la pagina con la informacion
+   departamento.addEventListener("click", () => {
+      window.location.href = `InfoDpto.html?depto=${id}`;
+   });
 });
 
