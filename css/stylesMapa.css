@@ -179,3 +179,47 @@ fill:#ff7c01db ;
 .pequeño-popover .popover-header{
     font-family: 'Kranky', cursive;
 }
+
+/*agregar al final de css/stylesMapa.css, es para la pagina InfoDpto*/
+ 
+/*para que el menu conoce mas aqui baje suave a cada seccion*/
+html {
+    scroll-behavior: smooth;
+}
+ 
+/*el navbar es sticky y tapaba el titulo de la seccion al bajar*/
+.modulo-seccion {
+    scroll-margin-top: 140px;
+}
+ 
+/*contenedor con el contenido real, reemplaza al placeholder gris*/
+.contenedor-contenido {
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    padding: 1.5rem;
+    font-family: 'Forum', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+ 
+.contenedor-contenido h3 {
+    font-family: 'Kranky', cursive;
+    margin-top: 1rem;
+}
+ 
+.contenedor-contenido h3:first-child {
+    margin-top: 0;
+}
+ 
+/*el texto de presentacion va centrado como en el maquetado*/
+#contenedor-texto-depto {
+    text-align: center;
+}
+ 
+/*las imagenes de las secciones siempre del mismo alto*/
+.contenedor-contenido img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+ 
