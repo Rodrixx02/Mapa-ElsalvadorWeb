@@ -20,24 +20,65 @@ const ArrayDepartamentos = [SanMiguel,LaUnion,Morazan,SanSalvador,SanVicente,Cus
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)) //inicializando los popovers de boostrap
 
+//en celular no existe el hover, entonces el primer toque muestra el nombre y el segundo entra a la pagina
+let departamentoActivo = null; //guarda el departamento que ya se toco una vez
+let tipoPuntero = "mouse"; //se actualiza en pointerdown para saber si fue mouse o dedo
+
+//guardamos los popovers por id para poder mostrarlos y ocultarlos desde cualquier funcion
+const popovers = {};
+
+function resaltar(departamento) {
+   departamento.style.fill = "#040273";
+   popovers[departamento.id].show();
+}
+ 
+function quitarResaltado(departamento) {
+   departamento.style.fill = "";
+   popovers[departamento.id].hide();
+}
+ 
 //aplicamos el event listener 
 ArrayDepartamentos.forEach((departamento)=>{
    const id=departamento.id;
    const labelCirculo= document.querySelector(`circle#${id}`);
-   const PopoverCirculo= new bootstrap.Popover(labelCirculo,{ trigger: 'manual', customClass: 'pequeño-popover', placement: 'top', html:true});
-   departamento.addEventListener("mouseover",(event)=>{
-      event.currentTarget.style.fill = "#040273";
-      PopoverCirculo.show();
+   popovers[id]= new bootstrap.Popover(labelCirculo,{ trigger: 'manual', customClass: 'pequeño-popover', placement: 'top', html:true});
+ 
+   departamento.addEventListener("pointerdown",(event)=>{
+      tipoPuntero = event.pointerType;
    });
-
-   departamento.addEventListener("mouseout",(event)=>{
-      event.currentTarget.style.fill = "";
-      PopoverCirculo.hide();
+ 
+   //el hover solo se aplica con mouse, con el dedo no existe
+   departamento.addEventListener("pointerenter",(event)=>{
+      if (event.pointerType === "mouse") {
+         resaltar(departamento);
+      }
    });
-
+ 
+   departamento.addEventListener("pointerleave",(event)=>{
+      if (event.pointerType === "mouse") {
+         quitarResaltado(departamento);
+      }
+   });
+ 
    //evento click que redirige a la pagina con la informacion
    departamento.addEventListener("click", () => {
+      //con el dedo, si es el primer toque solo mostramos la informacion
+      if (tipoPuntero !== "mouse" && departamentoActivo !== departamento) {
+         if (departamentoActivo) {
+            quitarResaltado(departamentoActivo);
+         }
+         departamentoActivo = departamento;
+         resaltar(departamento);
+         return;
+      }
       window.location.href = `InfoDpto.html?depto=${id}`;
    });
 });
 
+//si tocan fuera de un departamento se quita la seleccion
+document.addEventListener("click", (event)=>{
+   if (departamentoActivo && !ArrayDepartamentos.includes(event.target)) {
+      quitarResaltado(departamentoActivo);
+      departamentoActivo = null;
+   }
+});

@@ -6,7 +6,7 @@ const contHistoria = document.getElementById("contenido-historia");
 const contTradiciones = document.getElementById("contenido-tradiciones");
 const contGastronomia = document.getElementById("contenido-gastronomia");
 const contLugares = document.getElementById("contenido-lugares");
-
+ 
 //el id llega por la url, por ejemplo InfoDpto.html?depto=SVSS
 const params = new URLSearchParams(window.location.search);
 const idDepto = params.get("depto");
@@ -16,7 +16,7 @@ function crearLista(arreglo) {
     const items = arreglo.map(elemento => `<li>${elemento}</li>`).join("");
     return `<ul>${items}</ul>`;
 }
-
+ 
 //quita el estilo gris del esqueleto y pone el contenido
 function llenarContenedor(contenedor, html) {
     contenedor.classList.remove("contenedor-placeholder");
@@ -33,60 +33,30 @@ function mostrarError(mensaje) {
     });
 }
  
-//trae img/sv.svg con ajax y deja solo el departamento que se esta viendo
+//dibuja la silueta con el trazo que esta en siluetas.js
 function cargarSilueta(id) {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "img/sv.svg", true);
+    const trazo = siluetas[id];
  
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            contSilueta.innerHTML = xhr.responseText;
-            const svg = contSilueta.querySelector("svg");
+    if (!trazo) {
+        console.warn("No hay silueta para " + id);
+        return;
+    }
  
-            //quitamos los demas departamentos
-            svg.querySelectorAll("#features path").forEach(path => {
-                if (path.id !== id) {
-                    path.remove();
-                }
-            });
+    //el path conserva el id, asi el css le pone el color de su zona (#SVxx)
+    contSilueta.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round">
+            <path id="${id}" d="${trazo}"></path>
+        </svg>`;
  
-            //los puntos y etiquetas del mapa no se ocupan en esta pagina
-            const puntos = svg.querySelector("#points");
-            if (puntos) {
-                puntos.remove();
-            }
-            const etiquetas = svg.querySelector("#label_points");
-            if (etiquetas) {
-                etiquetas.remove();
-            }
- 
-            //ajustamos el viewBox al tamaño del departamento para que se vea completo
-            const caja = svg.querySelector("#features path").getBBox();
-            svg.setAttribute("viewBox", `${caja.x} ${caja.y} ${caja.width} ${caja.height}`);
-        } else {
-            console.warn("No se pudo cargar la silueta, codigo: " + xhr.status);
-        }
-    };
- 
-    xhr.onerror = function () {
-        console.warn("Error de red al cargar la silueta");
-    };
- 
-    xhr.send();
+    //ajustamos el viewBox al tamaño del departamento para que se vea completo
+    const svg = contSilueta.querySelector("svg");
+    const caja = svg.querySelector("path").getBBox();
+    svg.setAttribute("viewBox", `${caja.x} ${caja.y} ${caja.width} ${caja.height}`);
 }
  
 function mostrarDepartamento(depto) {
     document.title = `${depto.nombre} - Nuestras Raíces`;
     badge.textContent = depto.nombre;
-
-  //imagen representativa segun el id del departamento 
-    if (imgDepto) {
-        imgDepto.src = `img/${depto.id}.jpg`;
-        imgDepto.alt = `Fotografía de ${depto.nombre}`;
-        imgDepto.onerror = function () {
-            this.src = "img/default.jpg";
-        };
-    }
  
     contTexto.innerHTML = `
         <p>${depto.nombre} es un departamento ubicado en la zona ${depto.zona} de El Salvador, su cabecera departamental es ${depto.cabecera}.</p>
@@ -94,9 +64,16 @@ function mostrarDepartamento(depto) {
     `;
  
     llenarContenedor(contHistoria, `
-        <p>${depto.historia}</p>
-        <h3 class="h5">Municipios</h3>
-        ${crearLista(depto.municipios)}
+        <div class="row">
+            <div class="col-md-8">
+                <p>${depto.historia}</p>
+                <h3 class="h5">Municipios</h3>
+                ${crearLista(depto.municipios)}
+            </div>
+            <div class="col-md-4">
+                <img src="img/${depto.id}.jpg" class="img-fluid rounded foto-depto" alt="Imagen de ${depto.nombre}">
+            </div>
+        </div>
     `);
  
     llenarContenedor(contTradiciones, `
@@ -106,7 +83,7 @@ function mostrarDepartamento(depto) {
         ${crearLista(depto.personajesCelebres)}
     `);
  
-    //el json todavia no tiene gastronomia, asi que por ahora esta vacío
+    //el json todavia no tiene gastronomia, asi que por ahora puede venir vacio
     if (depto.gastronomia && depto.gastronomia.length > 0) {
         llenarContenedor(contGastronomia, `
             ${crearLista(depto.gastronomia)}
@@ -147,3 +124,4 @@ async function iniciar() {
 }
  
 iniciar();
+ 
