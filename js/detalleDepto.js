@@ -78,6 +78,15 @@ function cargarSilueta(id) {
 function mostrarDepartamento(depto) {
     document.title = `${depto.nombre} - Nuestras Raíces`;
     badge.textContent = depto.nombre;
+
+  //imagen representativa segun el id del departamento 
+    if (imgDepto) {
+        imgDepto.src = `img/${depto.id}.jpg`;
+        imgDepto.alt = `Fotografía de ${depto.nombre}`;
+        imgDepto.onerror = function () {
+            this.src = "img/default.jpg";
+        };
+    }
  
     contTexto.innerHTML = `
         <p>${depto.nombre} es un departamento ubicado en la zona ${depto.zona} de El Salvador, su cabecera departamental es ${depto.cabecera}.</p>
