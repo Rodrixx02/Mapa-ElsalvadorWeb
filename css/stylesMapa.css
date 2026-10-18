@@ -81,17 +81,27 @@ h1, h2 {
 }
 
 /*enlaces del submenú*/
+.lista-submenus {
+    margin-bottom: 0;
+}
+ 
+/*cada enlace del submenu se ve como boton, sin subrayado*/
 .lista-submenus a {
-    color: #000000;
+    display: block;
+    color: black;
     font-family: 'Forum', serif;
     font-size: 1.15rem;
     font-weight: 600;
-    text-decoration: underline;
-    transition: color 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.4rem 1.25rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2 ease;
 }
-
+ 
 .lista-submenus a:hover {
-    color: #b17520;
+    background-color: #b17520;
+    color: #ffffff;
 }
 
 /*cajas contenedoras de contenido por js*/
@@ -214,4 +224,19 @@ html {
     .aviso-tactil{
         display: block;
     }
+}
+
+/*se limita el ancho para que el video no ocupe toda la pantalla*/
+.video-contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+ 
+.creditos-video {
+    text-align: center;
+    font-family: 'Forum', serif;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
