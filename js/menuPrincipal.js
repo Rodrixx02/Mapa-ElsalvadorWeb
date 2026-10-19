@@ -17,8 +17,8 @@ const SantaAna = document.getElementById("SVSA");
 
 const ArrayDepartamentos = [SanMiguel,LaUnion,Morazan,SanSalvador,SanVicente,Cuscatlan,Cabañas,LaLibertad,Chalatenango,LaPaz,Sonsonate,Auchapan,SantaAna,Usulutan]; //los ponemos en array para poder aplicar en general con foreach
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)) //inicializando los popovers de boostrap
+//const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+//const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)) //inicializando los popovers de boostrap
 
 //en celular no existe el hover, entonces el primer toque muestra el nombre y el segundo entra a la pagina
 let departamentoActivo = null; //guarda el departamento que ya se toco una vez
@@ -27,16 +27,23 @@ let tipoPuntero = "mouse"; //se actualiza en pointerdown para saber si fue mouse
 //guardamos los popovers por id para poder mostrarlos y ocultarlos desde cualquier funcion
 const popovers = {};
 
+function OcultarTodosLosPopovers(){
+Object.values(popovers).forEach(ElementoPopover => {
+      ElementoPopover.hide();
+   });
+}
+
 function resaltar(departamento) {
    departamento.classList.add("resaltado-3d"); //agg nuestra clase al departamento que la hace ver 3d
    departamento.style.fill = "#F2F3F5";
+   OcultarTodosLosPopovers();
    popovers[departamento.id].show();
 }
  
 function quitarResaltado(departamento) {
    departamento.style.fill = "";
    departamento.classList.remove("resaltado-3d"); //quitamos el 3d
-   popovers[departamento.id].hide();
+   //popovers[departamento.id].hide();
 }
  
 //aplicamos el event listener 
@@ -58,7 +65,13 @@ ArrayDepartamentos.forEach((departamento)=>{
  
    departamento.addEventListener("pointerleave",(event)=>{
       if (event.pointerType === "mouse") {
+         const seQuedaEnElMapa = event.relatedTarget && event.relatedTarget.closest("svg");
          quitarResaltado(departamento);
+
+         if(!seQuedaEnElMapa){
+            OcultarTodosLosPopovers();
+         }
+
       }
    });
  
@@ -68,6 +81,7 @@ ArrayDepartamentos.forEach((departamento)=>{
       if (tipoPuntero !== "mouse" && departamentoActivo !== departamento) {
          if (departamentoActivo) {
             quitarResaltado(departamentoActivo);
+            OcultarTodosLosPopovers();
          }
          departamentoActivo = departamento;
          resaltar(departamento);
@@ -81,6 +95,7 @@ ArrayDepartamentos.forEach((departamento)=>{
 document.addEventListener("click", (event)=>{
    if (departamentoActivo && !ArrayDepartamentos.includes(event.target)) {
       quitarResaltado(departamentoActivo);
+      OcultarTodosLosPopovers();
       departamentoActivo = null;
    }
 });
