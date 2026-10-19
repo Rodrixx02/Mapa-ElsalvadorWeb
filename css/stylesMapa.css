@@ -15,6 +15,13 @@
     vayan en una sola fila continua*/
 }
 
+body {
+    background-image: url(/img/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .division-linea::before,
 .division-linea::after{
     content:"";
@@ -132,16 +139,17 @@ h1, h2 {
     --bs-popover-max-width: 130px;
 
     font-size: 0.65rem;
-    font-family: cursive;
+    font-family: 'Forum', serif;
+
     
 
     --bs-popover-body-padding-x: 0.1rem;
     --bs-popover-body-padding-y: 0.1rem;
     --bs-popover-header-padding-x: 0.1rem;
     --bs-popover-header-padding-y: 0.1rem;
-    --bs-popover-border-color: rgba(147, 150, 89);
-    --bs-popover-bg: #B2AC88;
-    --bs-popover-header-bg: rgba(147, 150, 89);;
+    
+    --bs-popover-bg: rgba(177, 117, 32, 0.94);
+    --bs-popover-header-bg: rgba(177, 117, 32, 0.94);
     --bs-popover-header-font-size: 0.75rem;
     --bs-popover-body-color: #ffffff;
     --bs-popover-header-color: #ffffff;
@@ -239,4 +247,19 @@ html {
     font-family: 'Forum', serif;
     font-size: 0.9rem;
     margin-top: 0.5rem;
+}
+
+
+/*por default aplicamos estos presets para que se vea mas suave la transicion del 3d*/
+svg#features path {
+    transition: transform 0.3s ease, filter 0.3s ease, fill 0.3s ease;
+
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+/*esta clase agg a cada path de deaprtamento cuando se detecte que se ha seleccionado*/
+.resaltado-3d{
+filter: drop-shadow(4px 6px 4px rgba(0,0,0,0.6));
+transform: scale(1.03) translateY(-3px);
 }

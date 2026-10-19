@@ -28,12 +28,14 @@ let tipoPuntero = "mouse"; //se actualiza en pointerdown para saber si fue mouse
 const popovers = {};
 
 function resaltar(departamento) {
-   departamento.style.fill = "#040273";
+   departamento.classList.add("resaltado-3d"); //agg nuestra clase al departamento que la hace ver 3d
+   departamento.style.fill = "#F2F3F5";
    popovers[departamento.id].show();
 }
  
 function quitarResaltado(departamento) {
    departamento.style.fill = "";
+   departamento.classList.remove("resaltado-3d"); //quitamos el 3d
    popovers[departamento.id].hide();
 }
  
