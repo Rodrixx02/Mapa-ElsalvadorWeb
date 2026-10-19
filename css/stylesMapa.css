@@ -15,13 +15,6 @@
     vayan en una sola fila continua*/
 }
 
-body {
-    background-image: url(/img/Fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .division-linea::before,
 .division-linea::after{
     content:"";
@@ -103,7 +96,7 @@ h1, h2 {
     text-align: center;
     padding: 0.4rem 1.25rem;
     border-radius: 6px;
-    transition: background-color 0.2s ease, color 0.2 ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
  
 .lista-submenus a:hover {
@@ -251,7 +244,7 @@ html {
 
 
 /*por default aplicamos estos presets para que se vea mas suave la transicion del 3d*/
-svg#features path {
+#features path {
     transition: transform 0.3s ease, filter 0.3s ease, fill 0.3s ease;
 
     transform-origin: center;
@@ -260,6 +253,6 @@ svg#features path {
 
 /*esta clase agg a cada path de deaprtamento cuando se detecte que se ha seleccionado*/
 .resaltado-3d{
-filter: drop-shadow(4px 6px 4px rgba(0,0,0,0.6));
-transform: scale(1.03) translateY(-3px);
+filter: drop-shadow(0 6px 5px rgba(0,0,0,0.45));
+transform: scale(1.04) translateY(-3px);
 }

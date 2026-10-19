@@ -43,14 +43,14 @@ function resaltar(departamento) {
 function quitarResaltado(departamento) {
    departamento.style.fill = "";
    departamento.classList.remove("resaltado-3d"); //quitamos el 3d
-   //popovers[departamento.id].hide();
+   popovers[departamento.id].hide();
 }
  
 //aplicamos el event listener 
 ArrayDepartamentos.forEach((departamento)=>{
    const id=departamento.id;
    const labelCirculo= document.querySelector(`circle#${id}`);
-   popovers[id]= new bootstrap.Popover(labelCirculo,{ trigger: 'manual', customClass: 'pequeño-popover', placement: 'top', html:true});
+   popovers[id]= new bootstrap.Popover(labelCirculo,{ trigger: 'manual', customClass: 'pequeño-popover', placement: 'top', html:true, animation: false});
  
    departamento.addEventListener("pointerdown",(event)=>{
       tipoPuntero = event.pointerType;
@@ -65,13 +65,7 @@ ArrayDepartamentos.forEach((departamento)=>{
  
    departamento.addEventListener("pointerleave",(event)=>{
       if (event.pointerType === "mouse") {
-         const seQuedaEnElMapa = event.relatedTarget && event.relatedTarget.closest("svg");
          quitarResaltado(departamento);
-
-         if(!seQuedaEnElMapa){
-            OcultarTodosLosPopovers();
-         }
-
       }
    });
  
