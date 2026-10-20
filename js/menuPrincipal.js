@@ -17,9 +17,6 @@ const SantaAna = document.getElementById("SVSA");
 
 const ArrayDepartamentos = [SanMiguel,LaUnion,Morazan,SanSalvador,SanVicente,Cuscatlan,Cabañas,LaLibertad,Chalatenango,LaPaz,Sonsonate,Auchapan,SantaAna,Usulutan]; //los ponemos en array para poder aplicar en general con foreach
 
-//const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-//const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)) //inicializando los popovers de boostrap
-
 //en celular no existe el hover, entonces el primer toque muestra el nombre y el segundo entra a la pagina
 let departamentoActivo = null; //guarda el departamento que ya se toco una vez
 let tipoPuntero = "mouse"; //se actualiza en pointerdown para saber si fue mouse o dedo
